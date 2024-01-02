@@ -2,21 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to-do app</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head>
-<body>
+<body>      
     <div class="container">
+        <!--navbar-->
+        <nav class="navbar">
+            <img class="icon-1" src="images/icon.png" />
+            <div class="motivation">Motivation</div>
+            <div class="goals">Goals</div>
+            <div class="fa-qs">FAQs</div>
+            <div class="contact-us">Contact Us</div>
+            <div class="menu">
+              <div class="sign-in">Sign in</div>
+            </div>
+            <div class="button-primary-with-icon">
+              <div class="frame-1">
+                <div class="button-name">Create Account</div>
+              </div>
+            </div>        
+        </nav>       
+
         <div class="todo-app">
-            <h2> To-Do List <img src="images/icon.jpg" alt="logo"></h2>
+            <h2> To-Do List <img src="images/icon.png" alt="logo"></h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your text">
                 <button onclick="addTask()">Add</button>
             </div>
-            <ul id="list">
-                <!-- <li class="checked">task 1</li>
-                <li>task 2</li> -->
+            <ul id="list">                
             </ul>
         </div>        
     </div>
